@@ -24,7 +24,7 @@ jobs:
           pip install -r requirements.txt
       - name: GET UP
         env:
-            GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+            GITHUB_TOKEN: ${{ secrets.YAN_GITHUB_ACCESS_TOKEN }}
             WEATHER_MESSAGE: ${{ github.event.inputs.message }}
         run: |
-          python get_up.py ${{ secrets.GITHUB_TOKEN }} ${{ github.repository }} ${{ env.WEATHER_MESSAGE }}
+          python get_up.py ${{ secrets.YAN_GITHUB_ACCESS_TOKEN }} ${{ github.repository }} ${{ env.WEATHER_MESSAGE }}
