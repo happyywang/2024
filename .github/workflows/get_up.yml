@@ -27,4 +27,5 @@ jobs:
             GITHUB_TOKEN: ${{ secrets.YAN_GITHUB_ACCESS_TOKEN }}
             WEATHER_MESSAGE: ${{ github.event.inputs.message }}
         run: |
+          echo "Repository: ${{ github.repository }}"
           python get_up.py ${{ secrets.YAN_GITHUB_ACCESS_TOKEN }} ${{ github.repository }} ${{ env.WEATHER_MESSAGE }}
