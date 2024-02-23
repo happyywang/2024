@@ -5,7 +5,7 @@ from github import Github
 
 # 1 real get up
 GET_UP_ISSUE_NUMBER = 1
-GET_UP_MESSAGE_TEMPLATE = "Today's Wakeup Time is --{get_up_time}.\r\n\r\n Get up ~~~。"
+GET_UP_MESSAGE_TEMPLATE = "Today's Wakeup Time is --{get_up_time}.\r\n\r\n 5 am project starts now ~~~。"
 
 TIMEZONE = "Europe/Berlin"
 
